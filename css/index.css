@@ -1,0 +1,82 @@
+/* Collapse button CSS */
+.collapse-button img{
+	width: 30px;
+    height: 30px;
+	transition-duration: 0.5s;
+	display: inline-block;
+	position: fixed;
+    left: 260px;
+}
+.collapse-button.collapsed img{
+	position: fixed;
+	left: 5px;
+	transition-duration: 0.5s;
+}
+
+.collapse-button p {
+	display: inline-block;
+	float: left;
+}
+.collapse-button {
+	position: fixed;
+    bottom: 0;
+    width: 280px;
+    height: 40px;
+}
+
+.collapse-button.collapsed{
+	width: 50px;
+	left: -5px;
+}
+
+/* Side Panel CSS */
+#side-panel {
+	width: 300px;
+    display: inline-block;
+	position: absolute;
+	left: 0;
+	transition-duration: 0.5s;
+}
+#side-panel.collapsed {
+	width: 50px;
+	transition-duration: 0.5s;
+}
+.search-input {
+	width: 100%;
+	height: 40px;
+	color: dimgray;
+}
+.searched-list {
+	margin-top: 20px;
+	color: #2f4d74;
+	overflow-y: auto;
+	height: 75vh;
+}
+/* Google Maps Canvas CSS */
+#map-canvas {
+	height: 100vh;
+	width: calc(100% - 300px);
+    display: inline-block;
+	margin-left: 300px;
+	transition-duration: 0.5s;
+}
+#map-canvas.collapsed {
+	width: calc(100% - 50px);
+	margin-left: 50px;
+	transition-duration: 0.5s;
+}
+
+/* MISC */
+.tab-content{
+	margin: 10px 0;
+}
+.pointer {
+	cursor: pointer;
+}
+#zenefits {
+    background-image: url("../assets/zen.png");
+    background-size: 120px 120px;
+    background-repeat: no-repeat;
+	height: 120px;
+    width: 120px;
+}
